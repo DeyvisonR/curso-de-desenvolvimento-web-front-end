@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>videos e iframes</title>
+
+        <meta name="description" content="aprendendo a colocar videos no site e iframes">
+        <meta name="keywords" content="videos, iframes">
+        <meta name="author" content="deyvison">
+
+    </head>
+    <body>
+        <header>
+            <video loop autoplay controls><!--
+            controls -> serve para a aparecer os controles
+            loop -> serve para deixar o video em loop
+            autoplay serve para o video inicia automaticamente
+            muted -> serve para o video inicia mutado-->
+                <source src="imagens/ads.mp4" type="video/mp4" title="video promocional">
+            </video>
+        </header>
+        <div style="clear: both;"></div>
+        <iframe src="https://www.lipsum.com/feed/html"></iframe>
+        <audio loop autoplay><!--
+            controls -> serve para a aparecer os controles
+            loop -> serve para deixar o audio em loop
+            autoplay serve para o audio inicia automaticamente
+            muted -> serve para o audio inicia mutado-->
+            <source src="horse.mp3" type="audio/mpeg">
+          </audio>
+    </body>
+</html>

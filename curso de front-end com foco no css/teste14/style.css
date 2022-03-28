@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.boxes{
+	width: 100%;
+	height: 500px;
+	background-color: gray;
+}
+
+.box1, .box2,  .box3, .box4{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	display: inline-block;
+	margin: 20px 45px;
+}
+
+.box2{
+	background-color: red; 
+}
+
+.box3{
+	background-color: blue;
+}
+
+.box4{
+	background-color: green;
+}
+/*
+.box2:hover{
+	background-color: black;
+	height: 900px;
+	vertical-align: top;
+}
+:hover depois do nome da class serve para
+aplicar algum efeito no objeto quando
+passar o mouse*/
+
+/*
+.box2:active{
+	background-color: yellow;
+	height: 900px;
+	vertical-align: top;
+}
+:active e a mesma  coisa do :hover só que
+para ativalo tem que clicar e segurar com
+o mouse(pressionar o mouse)*/
+
+/*
+.enviar:focus{
+	background-color: red;
+}
+:focus serve para mudar algum elemento
+quando clicado*/
+
+/*
+.link:link{
+	color: blue;
+}
+:link serve para mudar as coisas do class
+que tiver o link*/
+
+/*
+.link:visited{
+	color: pink;
+}
+:visited serve para mudar as coisas do link
+depois que ele ja estiver sido visitado*/

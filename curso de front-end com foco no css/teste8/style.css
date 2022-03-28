@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.box{
+	width: 300px;
+	height: 400px;
+	background-color: gray;
+	margin: 0 auto;
+	overflow: scroll;
+	/*
+	comandos para colocar no overflow
+	hidden --> esconde a parte que passa das especificações
+	auto --> cria automaticamente se passa das especificações
+	scroll --> cria a scrollbar mesmo que não precise dela
+	o overflow fica automaticamente no visible
+	*/
+}

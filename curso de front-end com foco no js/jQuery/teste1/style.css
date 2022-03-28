@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.teste, .teste-2{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.teste3{
+    background-color: gray;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}

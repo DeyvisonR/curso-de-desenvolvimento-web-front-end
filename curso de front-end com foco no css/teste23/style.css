@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*
+.boxes{
+    float: left;
+    width: 33.3%;
+    height: 33.3%;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.clear{
+    clear: both;
+}
+*/
+/*
+@media screen and (max-width: 375px){
+    .boxes{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .boxes{
+        width: 100%;
+    }
+}
+
+os dois de cima servem para aplicar algum
+efeito em algo se oque tiver no parenteses
+estiver acontecendo
+
+nesse daqui de baixo tem que ta seguindo as
+duas condições que tão no parenteses para
+que o efeito seja aplicado
+
+@media screen and (max-width: 1280px) 
+and (max-height: 720px){
+    .boxes{
+        width: 100%;
+    }
+}
+
+e por fim esse debaixo funciona se uma das
+duas condições tiverem sido aplicadas
+
+@media screen and (max-width: 900px), 
+screen and (max-height: 700px){
+    .boxes{
+        width: 100%;
+    }
+}
+*/
+
+.boxes{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: gray;
+    position: relative;
+}
+
+.boxes div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.boxes3{
+    z-index: 4;
+    background-color: red;
+    left: 20px;
+}
+
+.boxes2{
+    background-color: blue;
+    z-index: 3;
+}
+
+.boxes1{
+    background-color: green;
+    left: 40px;
+}
+/*z-index: num; --> no lugar do num colocar
+um numero alto para ativar o z-index(quanto
+mais alto o numero maior e a prioridade do 
+z-index) e o z-index serve para criar o 
+efeito de slider no css(para elementos 
+sobreporem outros elementos) */

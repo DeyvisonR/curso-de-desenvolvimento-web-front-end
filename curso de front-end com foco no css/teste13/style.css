@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+
+.box{
+	width: 100%;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.box{
+	background-color: gray;
+	padding: 10px 0;
+}
+
+.item{
+	width: 33.3%;
+	margin: -4px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item img{
+	width: 40%;
+}
+
+.item p{
+	width: 80%;
+	display: inline-block;
+}

@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	width: 340px;
+	background-color: green;
+	/*text-align: center; no lugar do center pode ser
+	"right ou left" também
+	tem que usar essa tag embaixo do que
+	deseja alinhar;*/
+	margin: 10 auto;
+	padding: 20px 20px 
+	/*margin: 0 auto
+	0 = margin-top e margin-bottom: 0;
+	auto = margin-right e margin-left: 0;
+	ou seja:
+	0 e igual  a:
+	margin-top: 0;
+	margin-bottom: 0;
+	auto e igual a:
+	margin-right: auto;
+	margin-left: auto;
+	margin: espaçamento externo ex: espaçamento do google
+	padding: espaçamento interno ex: espaçamento do background
+	padding: 20px 10px
+	20px = margin-top e margin-bottom: 20px;
+	10px = margin-right e margin-left: 10px;
+	ou seja:
+	20 e igual  a:
+	padding-top: 20px;
+	padding-bottom: 20px;
+	auto e igual a:
+	padding-right: 10px;
+	padding-left: 10px;
+	*/
+}
+.menu > a{
+	color: red;
+	font-size: 20px;
+	margin: 0px 9px;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 2px
+	/*border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-width: 1px;
+	border-color: cor;
+	border-style: solid;*/
+}

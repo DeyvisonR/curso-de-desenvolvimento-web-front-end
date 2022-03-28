@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>criando e usando variaveis do tipo array e objeto, 
+            aprendendo sobre o tipo de variavel com o typeof(variavel)
+            e aprendendo a importar arquivos externos de javaScript</title>
+
+    </head>
+
+    <body>
+        
+        <h1></h1>
+
+        <script>
+            
+            var nome_1 = "deyvison";
+            var nome_2 = "rafael";
+            var nome_3 = "tarcisio";
+
+            /* em ves de definir um nome por cada variavel eu posso criar 
+            uma variavel array que comporta infinitos nomes e para criala 
+            e usala e bem facil só basta usar a seguinte estrutura na variavel 
+            e em quando for chamar a variavel */
+
+            var nome = [];
+            /*o comando acima cria uma variavel do tipo array*/
+
+            nome[0] = "rafael";
+            nome[1] = "tarcisio";
+            nome[2] = "deyvison";
+            /*aqui e o jeito de inserir coisas na variavel do tipo array*/
+            
+            console.log(nome[0] + nome[1] + nome[2]);
+            console.log(nome);
+
+            var animal = {};
+
+
+            animal.especie = "gato";
+            animal.nome = "mimosa";
+            animal["idade"] = 6;
+
+            console.log("este animal e da especie: " + animal.especie + " e tem o nome de " + animal.nome + " e tem " + animal.idade + " de idade");
+
+            animal.teste = [];
+
+            animal.teste[1] = "testando"
+            
+            console.log(animal.teste[1]);
+
+            /*pode ter variaveis dentro de outras variaveis inculise as do tipo array e objeto*/
+
+            console.log(typeof(nome))
+            console.log(typeof(animal))
+            console.log(typeof(animal.teste))
+            console.log(typeof(animal.teste[1]))
+
+        </script>
+
+        <!--para importar arquivos externos de javaScript basta ultilizar o:
+            
+        <script src="nome do arquivo javaScript">
+
+        </script>-->
+
+    </body>
+
+</html>

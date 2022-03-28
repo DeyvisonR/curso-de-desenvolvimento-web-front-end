@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testando e entendendo como funciona o new</title>
+
+    </head>
+
+    <body>
+        
+        <h1></h1>
+
+        <script>
+            
+            function animais(){
+                this.animal1 = "gato";
+                this.animal2 = "cachorro";
+                this.animal3 = "rato";
+            }
+
+            var meuanimal = new animais();
+
+            meuanimal.animal1 = "elefante";
+
+            console.log(meuanimal);
+
+        </script>
+
+    </body>
+
+</html>

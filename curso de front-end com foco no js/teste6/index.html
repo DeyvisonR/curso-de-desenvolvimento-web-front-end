@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>criando e entendendo funções</title>
+
+    </head>
+
+    <body>
+        
+        <h1></h1>
+
+        <script>
+            window.onload = function(){
+
+                function realizarconta1(num1, num2){
+                    soma = num1 + num2;
+                    console.log(num1 + " " + num2 + " " + soma);
+                } // aqui não retorna nada, porem mostra esse console.log()
+
+                function realizarconta2(num1, num2){
+                    soma = num1 + num2;
+                    return soma;
+                } // aqui eu retorno a variavel que tiver no return
+
+                //modo de criar uma função 
+
+                realizarconta1(50, 60);
+                console.log(realizarconta2(50, 60));
+
+                //aqui estou ultilizando a função
+
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+body{
+	background-color: white;
+
+}
+/* maneira de chamar pelo id */
+#div1 h1{
+	color: red;
+	background: blue;
+}
+/* maneira de chamar pela class */
+.div11 h1{
+	color: red;
+}
+.div22 h1{
+	color: purple;
+}
+/* a diferença do id para a class e que o id e unico,
+e não pode ter duas coisas com o mesmo id e a class
+poder ter duas ou mais com a mesma class */

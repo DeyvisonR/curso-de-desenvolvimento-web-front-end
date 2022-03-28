@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*
+ul li:nth-of-type(3){
+    color: red;
+}
+:nth-of-type() serve para escolher um item
+de 1 tipo especifico
+
+ul li:nth-child(4){
+    color: blue;
+}
+:nth-last-child() serve para selecionar um
+dos "filhos" da ta tag pai
+*/
+
+.box{
+    width: 100%;
+}
+
+.box div{
+    box-sizing: border-box;
+    width: 33.3%;
+    height: 400px;
+    float:  left;
+    background-color: green;
+    border: 1px solid black;
+}
+/*
+.item:last-of-type{
+    background-color: yellow;
+}
+:last-of-type serve para pegar o ultimo do
+tipo
+
+.item:last-child{
+    background-color: brown;
+}
+:last-child serve para pegar o ultimo
+elemento da class pai
+*/
+
+/*
+:not() executa os estilos em todas as
+coisas que não tiverem no () na class que
+foi chamada ex:
+
+.box div:not(.item-one){
+    background-color: gold;
+}
+*/
+
+/*
+.item-one::after{
+    content:" para ser o nosso
+    teste da vez";
+    color: blueviolet;
+    background-color: cyan;
+}
+::after serve para fazer algo depois da
+class content:" "; -> serve para colocar
+um texto depois
+
+.item-one::before{
+    content: "isso aqui vem antes do ";
+    color: darkorange;
+    background-color: darkred;
+}
+::before serve para colocar algo antes da
+class
+*/

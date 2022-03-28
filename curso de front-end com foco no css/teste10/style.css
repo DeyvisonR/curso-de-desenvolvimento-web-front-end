@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+table{
+	margin: 0 auto;
+	width: 700px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table tr td{
+	border: 1px solid black;
+	width:  200px;
+	height: 30px;
+}

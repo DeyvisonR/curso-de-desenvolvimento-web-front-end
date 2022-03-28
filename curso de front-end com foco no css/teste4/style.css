@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	hight: 100%;
+}
+div.texto{
+	width: 100%;
+	max-width: 900px;
+	margin: 10px auto;
+	text-align: center;
+}
+div.texto h1{
+	color: red;
+	font-family: "Copperplate", Papyrus, Fantasy;
+	font-style: italic;
+	font-weight: normal;
+}
+div.texto p{
+	color: blue;
+	font-family: "lucida console", courier new, monospace;
+	font-style: normal;
+	background-color: gray;
+	padding: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: left; /*serve para configurar o
+	lado que o texto vai se alinhar*/
+	/*line-height: 20px; altura de cada quebra de
+	linha no texto ex:
+
+	aaaaaaaaaaaaaaa
+	espaçamento no meio = line-height
+	aaaaaaaaaaaaaaa*/
+}

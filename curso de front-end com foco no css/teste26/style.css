@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+
+
+    transition: 0.6s;/*aqui define o tempo 
+    para mudar para o hover*/
+    transition-timing-function: linear;
+/*
+ease - especifica um efeito de transição com um início lento, depois rápido e depois termina lentamente (este é o padrão)
+linear - especifica um efeito de transição com a mesma velocidade do início ao fim
+ease-in - especifica um efeito de transição com um início lento
+ease-out - especifica um efeito de transição com um final lento
+ease-in-out - especifica um efeito de transição com início e fim lentos
+cubic-bezier(n,n,n,n) - permite definir seus próprios valores em uma função cúbica-bezier
+*/
+    transition-property: height, width;
+    /*transition-property: ; -> define em
+    quais tag quer que aplique o efeito do
+    transition*/
+    transition-delay: 0.2s;/*aqui mostra 
+    quanto tempo vai demorar para o efeito
+    acontecer*/
+    /*transition: width 2s, height 4s;
+    forma de colocar o transition em só 
+    uma linha */
+    margin: 0 auto;
+
+
+
+
+
+    animation-name: animacao1;/*aqui serve 
+    para nomear a animação*/
+    animation-duration: 4s;/*aqui pode 
+    definir a duração da animação*/
+    animation-iteration-count: infinite;/*
+    aqui vai poder definir quantas vezes a 
+    animação vai acontecer*/
+    animation-delay: 2s;/*aqui pode definir
+    depois de quanto tempo vai começar a 
+    animação*/
+    animation-direction: alternate;/*
+serve para definir a direção da animação
+normal - A animação é reproduzida normalmente (para a frente). Isso é padrão
+reverse - A animação é reproduzida na direção inversa (para trás)
+alternate - A animação é reproduzida primeiro para a frente e depois para trás
+alternate - reverse- A animação é reproduzida primeiro para trás e depois para a frente*/
+    animation-timing-function: linear;/*
+aqui serve para definir a velocidade que 
+vai passar os segundos
+ease - Especifica uma animação com início lento, rápido e final lento (este é o padrão)
+linear - Especifica uma animação com a mesma velocidade do início ao fim
+ease-in - Especifica uma animação com um início lento
+ease-out - Especifica uma animação com um final lento
+ease-in-out - Especifica uma animação com início e fim lentos
+cubic-bezier(n,n,n,n)- Permite definir seus próprios valores em uma função cúbica-bezier*/
+    animation-fill-mode: none;/* aqui 
+define oque vai acontecer antes e depois da
+animação começar
+none- Valor padrão. A animação não aplicará nenhum estilo ao elemento antes ou depois de ser executado
+forwards- O elemento manterá os valores de estilo definidos pelo último quadro-chave (depende da direção da animação e da contagem de iteração da animação)
+backwards - O elemento obterá os valores de estilo definidos pelo primeiro quadro-chave (depende da direção da animação) e reterá isso durante o período de atraso da animação
+both - A animação seguirá as regras para frente e para trás, estendendo as propriedades da animação em ambas as direções*/
+}
+
+@keyframes animacao1{
+    /*da para usar a animação desse jeito
+    que muda de(from) 0% para(to) 100%*/
+    from{
+        background-color: black;
+    }
+
+    to{
+        background-color: rgb(34, 77, 34);
+    }
+
+    /*e desse jeito muda por parte(de 
+    tempo em tempo) oque acontece na
+    animação*/
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+
+
+
+
+.box:hover{
+    width: 600px;
+    height: 900px;
+}
+
+.box:hover .box2{
+    display: block;
+}
+
+.box2{
+    position: relative;
+    margin: 0 auto;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+
+
+
+
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+}
+
+.nav .listap{
+    width: 120px;
+    height: 50px;
+    background-color: brown;
+    line-height: 50px;
+}
+
+.nav a{
+    display: block;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+.opções{
+    position: absolute;
+    width: 100%;
+    background-color: yellow;
+    line-height: 60px;
+    display: none;
+    z-index: 1;
+    left: 0;
+}
+
+.teste2:hover .opções{
+    display: block;
+}
+
+
+.teste2{
+    display: inline-block;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    margin-left: 70px;
+}
+
+.teste3:hover{
+    background-color: white;
+}

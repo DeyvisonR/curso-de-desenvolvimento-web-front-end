@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>criando formularios avançados e preparando eles
+        para o back-end</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form> <!--Aqui eu começo o formulario-->
+            <fieldset> <!--Aqui eu começo o fieldset do formulario-->
+                <legend>formulario</legend> <!--aqui eu escrevo o titulo/legenda do formulario-->
+                <div class="dados"><input type="text" name="nome"
+                placeholder="Digite o seu nome" required></div>
+                <div class="dados"><input type="email" name="email"
+                placeholder="Digite o seu email" required></div>
+                <div class="dados"><input type="password"
+                name="senha" placeholder="Digite sua senha" required></div>
+                <div>
+                    <select name="idade" required>
+                        <option disabled selected>
+                        Qual e a sua idade</option>
+                        <option value="+7">+7</option>
+                        <option value="+10">+10</option>
+                        <option value="+15">+15</option>
+                        <option value="+18">+18</option>
+                    </select>
+                </div>
+                <h2>Qual e a sua cidade</h2>
+                <div class="input">
+                    <div>
+                        <input type="radio" name="cidade"
+                        value="Rio de janeiro" required>
+                        <span>Rio de janeiro</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="cidade" 
+                        value="São paulo">
+                        <span>São paulo</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="cidade" 
+                        value="Florianópolis">
+                        <span>Florianópolis</span>
+                    </div>
+                </div>
+                <h2>Qual e a sua comida favorita</h2>
+                <div class="input">
+                    <div>
+                        <input type="checkbox" name="comida[]"
+                        value="frutas"><span>frutas</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="comida[]"
+                        value="fast food"><span>fast food</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="comida[]"
+                        value="marmitas/quentinhas">
+                        <span>marmitas/quentinhas</span>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="obs"
+                    placeholder="Possui alguma observação?"></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="ação" value="enviar">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

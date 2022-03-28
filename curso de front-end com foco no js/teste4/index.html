@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>criando, brincando e entendendo condições</title>
+
+    </head>
+
+    <body>
+        
+        <h1></h1>
+
+        <script>
+            
+            window.onload = function(){
+
+                // === identico
+                // == igual
+                // >= maior ou igual
+                // <= menor ou igual
+                // > maior
+                // < menor
+                // != diferente
+
+
+                var nome = window.prompt("qual e o seu nome: ")
+
+                if(nome == "tarcisio"){
+                    window.alert("o nome " + nome + " e muito feio")
+                }
+                else if(nome == "rafael"){
+                    window.alert("o nome " + nome + " e muito estranho")
+                }
+
+                else if(nome == "deyvison"){
+                    window.alert("o nome " + nome  + " e muito bonito e raro, só pessoas muito especiais tem ele")
+                }
+
+                else if(nome == ""){
+                    window.alert("coloque um nome valido")
+                }
+
+                else{
+                    window.alert("o nome " + nome + " e comum")
+                }
+
+                var n1 = 2003;
+                var n2 = 2021;
+                soma = n2 - n1;
+
+                window.alert("para quem nasçeu no ano de " + n1 + " é esta no ano de " + n2 + " está com " + soma + " anos")
+
+                
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.bg{
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	/*backgrounds*/
+/*background-color: black; ->background com uma cor
+background-image: url(../imagens/teste2.jpg);  -->
+-> usa uma imagem como background(se a imagem for
+maior que o tamanho definido a imagem buga e
+para isso tem que usar o comando abaixo)
+background-size: 100% 100%;(800px 600px, auto,
+cover(coloca a imagem com as definições do
+backgruond), contain(coloca a imagem respeitando os
+valores da imagem))--> o primeiro e o tamanho da
+esquerda e da direita e o outro o de cima e o de
+baixo
+(e se sobra imagem reptida em algum dos dois casos
+e só usar o comando abaixo)
+background-repeat:no-repeat;(repeat, repeat-x,
+repeat-y, no repeat) --> serve para quando
+sobrar espaço não repitir a imagem
+*/
+	background-image: url(../imagens/teste2.jpg); 
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed; /*deixa a imagem
+	de background fixada no mesmo lugar(parada)*/
+}
+
+.box{
+	width: 50%;
+	height: 1500px;
+	margin: 0 auto;
+	background-color: black;
+}

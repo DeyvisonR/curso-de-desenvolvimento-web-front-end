@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+input[type="text"]{
+	background-color: orange; 
+}
+
+input[type="submit"]{
+	background-color: green;
+}
+
+/*
+a[href="https://www.google.com.br/"]{
+	text-decoration: none;
+serve para manipular a tag a por atributo(o que
+vem depois do = tem que ta igual no html)
+}
+*/
+
+/*
+a[href~="https://www.google.com.br/"]{
+	text-decoration: none;
+	background-color: red;
+procura se tem a palavra igual entre os espaços
+}
+*/
+
+/*
+a[href*="google"]{
+	text-decoration: none;
+	background-color: blue;
+so vai se tiver oque foi colocado depois  do =(
+não precisa nem ta 100% escrito)
+}
+*/
+
+/*
+a[attr|="google"]{
+	text-decoration: none;
+	background-color: blue;
+só funciona se oque for depois do = for a primeira
+palavra do html e o que vier depois dessa palavra
+estiver depois de um -
+*/
+
+/*
+a[attr^="google"]{
+	text-decoration: none;
+	background-color: pink;
+só funciona se oque for depois do = for a primeira
+palavra do html
+}
+*/
+
+/*
+a[attr$="danki"]{
+	text-decoration: none;
+	background-color: gray;
+}
+funciona se for a ultima palavra do html(só funciona
+se estiver escrito 100%)
+*/

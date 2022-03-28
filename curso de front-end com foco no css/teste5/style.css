@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.lista, .lista2{
+	list-style-position: outside;
+	/*inside = dentro do espaçamento
+	outside = fora do espaçamento*/
+	list-style-type: disc;
+	/*o list-style-type: pode ter o disc, o circle e
+	o decimal*/
+	margin: 30px 10px;
+	background-color: #3399ff;
+	padding: 20px;
+	width: 800px;
+
+}
+.lista li, .lista2 li{
+	font-size: 20px;
+	color: black;
+	text-decoration: underline;
+	background-color: #cce5ff;
+	border-bottom: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+	width: 800px
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>criando e entendendo laços de repetição</title>
+
+    </head>
+
+    <body>
+        
+        <h1></h1>
+
+        <script>
+            
+            window.onload = function(){
+
+
+
+                n1= 1
+                while( n1 <= 10){
+                    n1 += 1
+                    console.log("a")
+                    if( n1 == 6){
+                        break
+                    }
+                }
+                console.log(n1)
+
+
+
+                for( n1 = 0; n1 < 10; n1 += 1 ){
+                    console.log("teste for")
+                    if( n1 == 3){
+                        continue
+                    }
+                }
+
+
+
+                do{
+                    console.log("ola mundo")
+                    a = 0
+
+                }while(a <= 10){
+                    a++
+                }
+
+            }
+            // break serve para parar o laço de repetição
+
+            // continue serve para continuar o laço de repetição e pular 1
+
+        </script>
+
+    </body>
+
+</html>

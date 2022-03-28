@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.menu-fixed{
+	/*fixed -> deixa o menu fixado na tela em
+	qualquer lugar do documento, absolute deixa
+	o menu fixado em uma parte especifica do
+	documento, relative pode colocar o menu em
+	qualquer lugar dococumento
+	position por padrão fica no static*/
+	position: fixed;
+	/*em baixo desse comando pode usar o left,
+	right, top, bottom para ajustar aonde e que
+	vai ficar o menu ou coisa que foi fixada*/
+	width: 100%;
+	height: 200px;
+	background-color: yellow;
+}
+
+.box{
+	width: 100%;
+	height: 1200px;
+	background-color: gray;
+}
+
+.teste{
+	width: 100%;
+	height: 1200px;
+	background-color: black;
+}

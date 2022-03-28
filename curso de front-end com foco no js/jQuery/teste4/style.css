@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.menu{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+    text-align: center;
+}
+
+.menu nav ul li{
+    line-height: 70px;
+    display: inline-block;
+}
+
+.menu nav ul li a{
+    font-size: 20px;
+    color: cornflowerblue;
+    margin: 0px 20px;
+}
+
+section{
+    width: 100%;
+    min-height: 90%;
+}
+
+.conteudo{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+}
+
+.conteudo img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bullets-nav{
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translatex(50%);
+    
+}
+
+span{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #ccc;
+    float: left;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.home{
+    position: relative;
+    top: 70px;
+}
+
+.sobre{
+    position: relative;
+    top: 70px;
+}

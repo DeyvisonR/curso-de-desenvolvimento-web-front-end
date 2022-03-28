@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.quadrado{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 20px auto;
+    width: 40%;
+    padding: 8% 0;
+    background-color: black;
+    transition: 2s;
+    transform: translate(-50%, -50%);
+}
+
+.bola{
+    border-radius: 50%;
+    /*
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    com esses comandos da pra controlar o 
+    border-radius em cada lado do elemento
+    */
+    width: 50%;
+    padding: 20% 0;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.quadrado:hover{
+    transform: translate(-50%, -50%) rotate(360deg);
+    /*transform: translate(x-right, y-bottom);*/
+    background-color: red;
+}
+
+/*
+O exemplo a seguir aumenta o elemento <div> 
+para duas vezes sua largura original e três 
+vezes sua altura original:
+
+div {
+  transform: scale(2, 3);
+}
+
+O exemplo a seguir diminui o elemento <div> 
+para metade de sua largura e altura 
+originais:
+
+div {
+  transform: scale(0.5, 0.5);
+}
+*/

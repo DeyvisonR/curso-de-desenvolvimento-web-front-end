@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    background-color: cyan;
+    width: 100%;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.item{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 20px 10px;
+}
+/*
+.box div:nth-of-type(3) div.item{
+    background-color: darkblue;
+}
+:nth-of-type() serve para selecionar um
+elemento de um tipo na tag pai
+
+.box div:first-child div.item{
+    background-color: black;   
+}
+:first-child serve para pegar o primeiro
+elemento da tag pai
+
+.box div:first-of-type div.item{
+    background-color: black;   
+}
+:first-of-type serve para pegar o primeiro
+elemento do tipo
+*/

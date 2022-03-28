@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*IMPORTANDO FONTES ATRAVES DO DIRETORIO
+FONTES JA BAIXADAS NO COMPUTADOR*/
+@font-face{
+    font-family: "Minha Fonte";
+    src:url("../fontes/OpenSans-Light.ttf");
+}
+
+html, body{
+    height: 100%;
+}
+
+/*
+h2{
+    font-family: 'Dongle', sans-serif;
+}
+
+a{
+    font-size: 30px;
+    font-family: 'Dongle', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Minha Fonte";
+}
+*/
+
+/*
+.box h1{
+    font-family: "Minha Fonte";
+}
+
+.text{
+    font-family: "tahoma" !important;
+!important serve para aplicar o efeito
+mesmo que tenha outro codigo com nivel de
+especificação maior
+}
+*/
+
+form *{
+    font-family: "Minha Fonte";
+    font-size: 17px;
+}
+/*
+> esse simbolo serve para indicar que
+ira alterar o elemento que estiver
+diretamente dentro do que estiver sendo
+mencionado ex:
+
+form > input{
+    font-family: "Minha Fonte";
+    font-size: 17px;
+}
+
+* esse simbolo serve para indicar que
+ira alterar todos os elemento que
+estiverem dentro do que estiver sendo
+mencionado ex:
+
+form *{
+    font-family: "Minha Fonte";
+    font-size: 17px;
+}
+
+*/

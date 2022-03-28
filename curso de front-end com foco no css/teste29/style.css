@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 50%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    /*no flex-direction eu posso usar: 
+    column; para os elementos se alinharem
+    em colunas
+
+    row: para os elementos se alinharem na 
+    mesma linha
+    
+    e depois do row e do column pode usar 
+    o -reverse para trocar a ordem dos 
+    elementos*/
+    flex-wrap: wrap;
+    /*serve para caso não de tudo em uma 
+    linha o elemento cair para  a proxima*/
+    justify-content: center;
+    /*serve para alinhar os items, com o:
+
+    center; serve para centralizar os 
+    elementos
+
+    flex-start; serve para alinhar os 
+    elementos no inicio
+
+    flex-end; serve para alinhar os 
+    elementos no fim
+    
+    space-around; serve para alinhar os 
+    elementos com espaço antes, entre e 
+    depois dos elementos*/
+
+    align-items: flex-start;
+    /*o align-items: serve para alinhar os 
+    elementos com o: 
+
+    center; alinha os elementos no centro
+    
+    flex-start; alinha na parte superior 
+    do bloco
+
+    flex-end; alinha na parte inferior 
+    do bloco
+    */
+}
+
+.box1{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+.box2{
+    width: 40%;
+    height: 50%;
+
+    /*background: linear-gradient(
+    to right bottom, rgb(0, 0, 0) 30%,
+    #ff0fff 30%,yellow)*/
+    /*background: linear-gradient
+    (35deg, rgb(0, 0, 0) 20%, #ff0fff,
+    yellow)
+
+    o comando e assim:
+    background: linear-gradient(direção, cor %(da cor), cor %(da cor), cor %(da cor), ...)
+    a direção funciona com direções(top, 
+    bottom, left, right), e tambem funciona
+    com angulos num(deg)*/
+
+    /*background: repeating-linear-gradient(red, yellow 20%, green 10%);
+    pra esse daqui funcionar tem que ta 
+    seguindo mais o menos essa sintaxe
+    e serve para criar mutiplos gradient 
+    e repitilios no elemento tambem posso 
+    definir a direção nesse daqui*/
+
+    /*background: radial-gradient(circle, red, yellow, green);
+    serve para criar um gradiente circular com um ciruclo no meio e depois vem as cores do gradient*/
+
+    /*background: repeating-radial-gradient(red, yellow 10%, green 15%);
+    esse daqui e e a mesma coisa do de cima so que com o repeating ja visto antes*/
+
+    background-color: black;
+}

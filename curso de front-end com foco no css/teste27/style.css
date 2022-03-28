@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    width: 600px;
+    height: 300px;
+    opacity: 0.8;
+    background-color: blue;
+    margin: 0 auto;
+    box-shadow: 10px 20px 10px 10px green;
+    /*o primeiro 10px serve para mexer a 
+    sombra na horizontal, o segundo 20px 
+    serve para mexer a sombra na vertical, 
+    o terceiro 10px serve para controlar o 
+    blul(embaçamento), o quarto 10px serve 
+    para controlar o tamanho da sombra e o 
+    quinto que e o green serve para 
+    controlar a cor*/
+}
+
+.box h1{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    /*o primeiro 2px serve para mexer a 
+    sombra na horizontal, o segundo 2px 
+    serve para mexer a sombra na vertical, 
+    o terceiro que e o 5px serve para 
+    controlar o blul(embaçamento), e o 
+    quarto que e o red e a cor da sombra*/
+}
