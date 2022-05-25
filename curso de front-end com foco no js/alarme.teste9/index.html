@@ -76,7 +76,24 @@
                 minutoatual = minuto.value;
                 segundoatual = segundo.value;
 
-                display.childNodes[1].innerHTML = minutoatual + ":" + segundoatual;
+                if(minutoatual < 10){
+                        var minutoAtualformatado = '0' + minutoatual
+                        if(segundoatual < 10){
+                            var segundoAtualFormatado = '0' + segundoatual
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoAtualFormatado;
+                        }else{
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoatual;
+                        }
+                    }else{
+                        if(segundoatual < 10){
+                            segundoAtualFormatado = '0' + segundoatual
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoAtualFormatado;
+                        }else{
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoatual;
+                        }
+                    }
+
+                
 
                 interval = setInterval(function(){
 
@@ -90,8 +107,23 @@
                             clearInterval(interval);
                         }
                     }
-                    
-                    display.childNodes[1].innerHTML = minutoatual + ":" + segundoatual;
+
+                    if(minutoatual < 10){
+                        minutoAtualformatado = '0' + minutoatual
+                        if(segundoatual < 10){
+                            segundoAtualFormatado = '0' + segundoatual
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoAtualFormatado;
+                        }else{
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoatual;
+                        }
+                    }else{
+                        if(segundoatual < 10){
+                            segundoAtualFormatado = '0' + segundoatual
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoAtualFormatado;
+                        }else{
+                            display.childNodes[1].innerHTML = minutoAtualformatado + ":" + segundoatual;
+                        }
+                    }
 
                 }, 1000)
 

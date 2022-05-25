@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" type="text/css" href="all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>aprendendo tecnicas do front end e do responsivo</title>
+
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logo">
+                <h1>LOGOMARCA</h1>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="imagem-menu-mobile">
+                <h2><i class="fa-solid fa-bars"></i></h2>
+            </div>
+
+            <nav class="menu-mobile">
+
+                <div class="imagem-fechar-menu">
+                    <h2><i class="fa-solid fa-xmark"></i></h2>
+                </div>
+                <div class="clear"></div>
+
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">teste1</a></li>
+                                <li><a href="#">teste2</a></li>
+                                <li><a href="#">teste3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="clear"></div>
+        </header>
+
+        <section>
+
+        </section>
+
+        <footer>
+            <p>todos os direitos reservados</p>
+        </footer>
+
+        <script src="all.min.js"></script>
+        <script src="jquery.js"></script>
+        <script>
+
+            $(function(){
+
+                var cont = false;
+
+                $('.imagem-menu-mobile').click(function(){
+                    $('.menu-mobile').css('display', 'block');
+                });
+
+                $('.imagem-fechar-menu').click(function(){
+                    $('.menu-mobile').css('display', 'none');
+                });
+
+                $('.menu-mobile > ul > li').click(function(){
+                    cont = false;
+                    if($(this).find('div').css('display') == 'block'){
+                        $(this).find('div').css('display', 'none');
+                        cont = true;
+                    };
+                    if(cont == false){
+                        $(this).find('div').css('display', 'block');
+                    }
+                    
+                });
+
+            });
+
+
+        </script>
+        
+    </body>
+
+</html>

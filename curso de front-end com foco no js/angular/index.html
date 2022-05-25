@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>aprendendo a mexer no angular</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            div{
+                width: 100%;
+                max-width: 600px;
+                background-color: gray;
+                text-align: center;
+                margin: 0 auto;
+                border: 1px solid black;
+            }
+
+            div > div{
+                background-color: white;
+            }
+
+            h1{
+                padding: 5px 0 10px;
+
+            }
+
+            ul{
+                padding: 10px;
+                list-style-type: none;
+                text-align: left;
+            }
+
+            ul li{
+                margin-top: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            span{
+                float: right;
+            }
+
+            section{
+                width: 100%;
+            }
+
+            input{
+                width: 60%;
+                height: 30px;
+                padding-left: 8px;
+                outline: 0;
+            }
+
+            button{
+                display: inline-block;
+                margin-left: -4px;
+                border: 0;
+                height: 30px;
+                background-color: green;
+                padding: 0 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--começando a mexer com o angular
+
+        <div class="teste" ng-app="myApp" ng-controller="myCtrl" ng-init="numero2 = 0">
+            <p>você quer somar quais numeros</p>
+            <input type="number" ng-model="numero1">
+            <input type="number" ng-model="numero2">
+            <p>a soma de {{numero1}} + {{numero2}} = {{numero1 + numero2}}</p>
+
+            <input type="text" ng-model="cor" style="background-color:{{cor}}">
+
+            <ul>
+                <li ng-repeat="x in nomes">
+                    {{ x.nome + ', ' + x.cidade }}
+                </li>
+            </ul>
+        </div>
+        -->
+
+        <div ng-app="myShoppingList" ng-controller="myCtrl">
+            <h1>my Shopping List</h1>
+            <div>
+                <ul>
+                    <li ng-repeat="x in produtos">{{x}}<span ng-click="removeItem($index)">&times;</span></li>
+                </ul>
+                <section>
+                    <input ng-model="addMe">
+                    <button ng-click="addItem()">Adicionar</button>
+                    <p>{{errortext}}</p>
+                </section>
+            </div>
+        </div>
+
+
+
+        <script src="angular.min.js"></script>
+
+        <!--
+        <script>
+
+
+
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function($scope) {
+            $scope.firstName= "John";
+            $scope.lastName= "Doe";
+            $scope.numero1 = 0;
+            $scope.cor = "gray"
+            $scope.nomes=[
+            {nome:'Jani',cidade:'Norway'},
+            {nome:'Hege',cidade:'Sweden'},
+            {nome:'Kai',cidade:'Denmark'}]
+            
+            });
+
+        </script>
+        -->
+
+    <script>
+        var app = angular.module("myShoppingList", []);
+        app.controller("myCtrl", function($scope) {
+        $scope.produtos = ["Milk", "Bread", "Cheese"];
+        $scope.addItem = function(){
+            $scope.errortext = "";
+            if (!$scope.addMe) {return;}
+            if ($scope.produtos.indexOf($scope.addMe) == -1) {
+                $scope.produtos.push($scope.addMe);
+            } else {
+                $scope.errortext = "o item ja esta na sua shopping list.";
+    }
+        }
+        $scope.removeItem = function(x){
+            $scope.produtos.splice(x, 1);
+        }
+        });
+    </script>
+
+    </body>
+</html>

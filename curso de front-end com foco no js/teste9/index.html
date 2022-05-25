@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <title>aprendendo como manipular o html e o css pelo javascript nativo</title>
+
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .teste1{
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+            }
+
+            .teste2{
+                width: 100px;
+                height: 100px;
+                background-color: #ccc;
+                line-height: 100px;
+            }
+
+            .teste2 p{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1 id="titulo"></h1>
+
+        <div class="teste1">
+
+        </div>
+
+        <div class="teste1">
+
+        </div>
+
+        <!-- eventos javascript no codigo html -->
+
+        <div class="teste2" onmouseover="this.style.backgroundColor = 'green'" onmouseout="this.style.backgroundColor = '#ccc'" onclick="this.innerHTML = '<p>teste do onclick</p>'">
+
+        </div>
+
+        <script>
+
+            window.onload = function(){
+
+                // para acessar um elemento pelo id basta usar:
+
+                var titulo = document.getElementById('titulo');
+
+                // para colocar conteudo em um elemento basta usar o:
+
+                titulo.innerHTML = 'teste do innerHTMl'
+
+                // e para adicionar mais conteudo sem apagar oque ja havia e só fazer assim:
+
+                titulo.innerHTML = titulo.innerHTML + ' e conteudo adicional'
+
+                // para selecionar um elemento espeçifico do codigo e apenas o primeiro de cima para baixo no codigo html:
+
+                var teste1 = document.querySelector('.teste1');
+
+                teste1.style.backgroundColor = 'blue'
+
+                // para selecionar todos os elementos iguais:
+
+                var teste12 = document.querySelectorAll('.teste1');
+                console.log(teste12)
+
+                teste12[1].style.backgroundColor = 'red'
+
+                //tipos de variaveis
+
+                // variavel do tipo var e uma variavel de escopo global:
+
+                var variavel1;
+
+                // variavel do tipo let e uma variavel de escopo de bloco(so funciona dentro do bloco) ex:
+
+                if(true){
+                    let variavel2 = 'teste do let'
+                    // console.log(variavel2) aqui vai pegar porque essa variavel so existe aqui
+                }
+
+                // console.log(variavel2) esse comando nao vai pegar porque ta fora do if
+
+
+                // variavel do tipo const e uma variavel de escopo de bloco e ela e imutavel ela e constante(apenas os atributos dos valores podem ser alterados) ex:
+
+                const variavel3 = {'carro': 'fiat', 'ano': '1992', 'tipo': 'passeio', 'momento': 'passado'}
+                variavel3.carro = 'celta'
+                console.log(variavel3)
+
+                // outra forma para ultilizar o for para que seja possivel ler objetos
+
+                for( item in variavel3){
+                    console.log(item)
+                    console.log(variavel3[item])
+                }
+
+            }
+
+        </script>
+        
+    </body>
+</html>

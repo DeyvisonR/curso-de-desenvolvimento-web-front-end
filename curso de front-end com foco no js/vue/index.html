@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <div id="app" v-html="testeVariavel" v-if="visible">
+            {{testeVariavel}}
+        </div>
+
+        <div id="app-2">
+            <ul>
+                <li v-for="el in elementos">
+                    {{ el.text }} <button v-on:click="printMensagem">clique para aparecer uma mensagem</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script>
+
+            var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!',
+                testeVariavel: '<h2>teste criando uma variavel</h2>',
+                visible: true
+            }
+            });
+
+            var app4 = new Vue({
+                el: '#app-2',
+                data: {
+                    elementos: [
+                    { text: 'Learn JavaScript' },
+                    { text: 'Learn Vue' },
+                    { text: 'Build something awesome' }
+                        ]
+                    },
+                methods: {
+                    printMensagem: function(){
+                        window.alert("teste do v-on:click")
+                    }
+                }
+                });
+
+        </script>
+    </body>
+</html>

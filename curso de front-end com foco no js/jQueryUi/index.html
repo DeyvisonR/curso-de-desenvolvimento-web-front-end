@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        .teste{
+            width: 100px;
+            height: 100px;
+            margin: 10px 20px;
+            background-color: gray;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .teste p{
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .teste4{
+            width: 120px;
+            height: 120px;
+            background-color:green;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="teste teste1">
+
+        <p>bounce</p>
+
+    </div>
+
+    <div class="teste teste2">
+
+        <p>explode</p>
+
+    </div>
+
+    <div class="teste teste7">
+
+        <p>blind</p>
+
+    </div>
+
+    <div class="teste teste8">
+
+        <p>clip</p>
+
+    </div>
+
+    <div class="teste teste9">
+
+        <p>drop</p>
+
+    </div>
+
+    <div class="teste teste10">
+
+        <p>fold</p>
+
+    </div>
+    
+    
+    <div class="teste teste11">
+
+        <p>fade</p>
+
+    </div>
+
+    <div class="teste teste12">
+
+        <p>Highlight</p>
+
+    </div>
+
+    <div class="teste teste13">
+
+        <p>puff</p>
+
+    </div>
+
+    <div class="teste teste14">
+
+        <p>pulsate</p>
+
+    </div>
+
+    <div class="teste teste15">
+
+        <p>scale</p>
+
+    </div>
+
+    <div class="teste teste16">
+
+        <p>shake</p>
+
+    </div>
+
+    <div id="teste3" class="teste teste3">
+
+        <p>draggable</p>
+
+    </div>
+
+    <div class="teste teste4">
+
+        <p>droppable</p>
+
+    </div>
+
+    <div class="teste teste5">
+
+        <p>resizable</p>
+
+    </div>
+
+    <ul id="sortable teste6">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+
+        $(".teste1").click(function(){
+            $(".teste1").effect("bounce", "slow")
+        })
+
+        // efeito de queda do elemento no lugar
+
+        $(".teste2").click(function(){
+            $(".teste2").effect("explode", 500)
+        })
+
+        $(".teste7").click(function(){
+            $(".teste7").effect("blind", 500)
+        })
+
+        $(".teste8").click(function(){
+            $(".teste8").effect("clip", 500)
+        })
+
+        $(".teste9").click(function(){
+            $(".teste9").effect("drop", 500)
+        })
+
+        $(".teste10").click(function(){
+            $(".teste10").effect("fold", 500)
+        })
+
+        $(".teste11").click(function(){
+            $(".teste11").effect("fade", 500)
+        })
+
+        $(".teste12").click(function(){
+            $(".teste12").effect("highlight", 500)
+        })
+
+        $(".teste13").click(function(){
+            $(".teste13").effect("puff", 500)
+        })
+
+        $(".teste14").click(function(){
+            $(".teste14").effect("pulsate", 500)
+        })
+
+        $(".teste15").click(function(){
+            $(".teste15").effect("scale", 500)
+        })
+
+        $(".teste16").click(function(){
+            $(".teste16").effect("shake", 500)
+        })
+
+        // efeito de explosão fazendo o elemento desaparecer
+
+        $("#teste3").draggable()
+
+        // efeito que faz com que seja possivel mover o elemento pelo site
+
+        $(".teste4").droppable({
+            drop: function(){
+                window.alert('o objeto esta aqui em cima')
+            }
+        })
+
+        $(".teste5").resizable()
+
+        // efeito de modificar o tamanho do elemento
+
+        $("#sortable").sortable()
+
+        // efeito de por mexer os elementos para trocar de lugar com outros elementos
+
+
+    </script>
+    
+</body>
+</html>

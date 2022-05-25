@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+    background-color: orange;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "teste1 teste2 teste3" "teste4 teste5 teste6" "footer footer footer";
+}
+
+.grid-container div{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 5px solid white;
+}
+
+.header{
+    grid-area: header;
+}
+
+.teste1{
+    grid-area: teste1;
+}
+.teste2{
+    grid-area: teste2;
+}
+.teste3{
+    grid-area: teste3;
+}
+.teste4{
+    grid-area: teste4;
+}
+.teste5{
+    grid-area: teste5;
+}
+.teste6{
+    grid-area: teste6;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+img{
+    filter: grayscale(100%) blur(1px) brightness(100%) contrast(100%);
+}
+
+/*grayscale(numero em %) serve para mudar a tonalidade da imagem
+blur(numero em px) serve para colocar um efeito de embaçamento na imagem
+brightness(numero em %) serve para controlar a claridade da imagem
+contrast(numero em %) serve para controlar o contraste da imagem*/
+
+
+.newspaper{
+    column-count: 3;
+
+    /*serve para dividir o texto ou os elementos de uma div em colunas*/
+}
