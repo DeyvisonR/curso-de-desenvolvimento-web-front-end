@@ -1,0 +1,35 @@
+@import 'style2';
+
+@corPrincipal: black;
+@width: 90% + 10%;
+@height: @width - 40%;
+
+.background(@color){
+    background-color: @color;
+    border: 5px solid @corPrincipal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.teste1{
+    width: @width;
+    height: @height;
+    .background(blue);
+    color: white;
+    &:hover{
+        background-color: gray;
+        height: @variavelDeOutraPagina;
+    }
+
+    @media screen and (max-width: 900px){
+        background-color: green;
+    }
+}

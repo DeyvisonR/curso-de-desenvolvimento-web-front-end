@@ -1,0 +1,42 @@
+@import 'style2';
+
+$cor: blue;
+
+%testeExtends {
+    width: 350px;
+    height: 150px;
+    background-color: chocolate;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+@mixin medidas {
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+}
+
+/*variavel com scss/sass */
+
+div {
+    @include medidas();
+
+    a {
+        background-color: red;
+    }
+    h2{
+        color: $variavel2;
+    }
+}
+
+.testeD{
+    @extend %testeExtends;
+}
