@@ -29,10 +29,10 @@ db.connect(function(err){
     if(err){
         console.log("Erro!!! não foi possivel conectar ao banco de dados");
     }
-    var sql = "SELECT * FROM `clientes`";
+    /*var sql = "SELECT * FROM `clientes`";
     db.query(sql, function(err, results){
         console.log(results);
-    });
+    });*/
 })
 
 // renderizar a pagina
@@ -40,10 +40,21 @@ db.connect(function(err){
 app.get("/", (req, res)=>{
     // res.render("index", {'nome': 'deyvison', "profissao": 'programador'});
     // acima está como passar parametros isolados
+    db.query("SELECT * FROM `clientes`", (err, results)=>{
+        res.render("index", {lista:results});
+    });
 });
 
 app.get("/cadastrar", (req, res)=>{
     // res.render("cadastrar", {lista:[{'telefone': '9 9999-9999'}, {"telefone": "9 8888-8888"}, {"telefone": "9 7777-7777"}]});
     // acima esta como passar um parametro com varios valores
     res.render("cadastrar", {});
+});
+
+app.post("/cadastrar", (req, res)=>{
+    let nome = req.body.nome;
+    let email = req.body.email;
+    let telefone = req.body.telefone;
+    res.render("cadastrar", {});
+    db.query('INSERT INTO `clientes` (nome, email, telefone) VALUES (?, ?, ?)', [nome, email, telefone], (err, results)=>{});
 });
